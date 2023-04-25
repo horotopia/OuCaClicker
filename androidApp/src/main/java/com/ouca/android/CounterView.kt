@@ -101,18 +101,11 @@ fun CounterView(counterViewModel: CounterViewModel) {
                 )
 
                 Text(
-                    text = "${(count).toInt()}%",
+                    text = "level ${countLVL}  |  ${(count).toInt()}%",
                     style = MaterialTheme.typography.h5,
                     color = MaterialTheme.colors.onBackground,
                 )
             }
-            Text(
-                text = " LVL: ${countLVL}",
-                modifier = Modifier
-                    .fillMaxSize(),
-                style = MaterialTheme.typography.h5,
-                color = MaterialTheme.colors.onBackground,
-            )
         }
     }
 }
